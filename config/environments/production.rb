@@ -44,7 +44,7 @@ Rails.application.configure do
   config.force_ssl = true
 
   # Decrease the log volume.
- config.log_level = :info
+  # config.log_level = :info
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -60,7 +60,7 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'gentle-garden-7691.herokuapp.com'
+  host = 'quiet-beach-12941.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
